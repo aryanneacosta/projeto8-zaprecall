@@ -1,3 +1,5 @@
+import "./style.css"
+
 export default function Home({ setTela }) {
     return (
         <div className="home">

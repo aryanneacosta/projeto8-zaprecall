@@ -1,0 +1,32 @@
+.home {
+    height: 317px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 148px;
+}
+
+.home>img {
+    height: 161px;
+    width: 136px;
+}
+
+.home>.titulo {
+    font-family: 'Righteous';
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+.home>button {
+    height: 54px;
+    width: 246px;
+    font-family: 'Righteous';
+    font-weight: 400;
+    color: #D70900;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: #D70900;
+}

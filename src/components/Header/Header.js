@@ -1,3 +1,5 @@
+import "./style.css";
+
 export default function Header({ setTela }) {
     return (
         <div className="header" onClick={() => setTela('home')}>

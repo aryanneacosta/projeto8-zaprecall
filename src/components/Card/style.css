@@ -1,0 +1,33 @@
+li {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15)
+}
+
+li:last-child {
+    margin-bottom: 95px;
+}
+
+.fechada {
+    height: 65px;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Recursive';
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.fechada>.texto {
+    margin-left: 20px;
+}
+
+.fechada>ion-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}

@@ -1,0 +1,35 @@
+li {
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15)
+}
+
+li:last-child {
+    margin-bottom: 95px;
+}
+
+.aberta {
+    height: 131px;
+    width: 300px;
+    background-color: #FFFFD4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Recursive';
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.aberta>.texto {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aberta>img {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 250px;
+}

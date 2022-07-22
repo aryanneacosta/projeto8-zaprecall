@@ -1,0 +1,18 @@
+.bottom {
+    height: 70px;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px rgba(34, 34, 34, 0.8);
+}
+
+.bottom>.texto {
+    font-family: 'Recursive';
+    font-size: 18px;
+    color: #333333;
+}
