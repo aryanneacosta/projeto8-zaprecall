@@ -19,7 +19,6 @@ li:last-child {
     font-family: 'Recursive';
     font-size: 16px;
     font-weight: 700;
-    color: #333333;
 }
 
 .fechada>.texto {
@@ -30,4 +29,35 @@ li:last-child {
     height: 25px;
     width: 25px;
     margin-right: 20px;
+}
+
+.play-outline {
+    color: #333333;
+}
+
+ion-icon[name="close-circle"] {
+    color: #FF3030;
+}
+
+.close-circle {
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+ion-icon[name="help-circle"] {
+    color:#FF922E;
+}
+
+.help-circle {
+    color:#FF922E;
+    text-decoration: line-through;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color:#2FBE34;
+}
+
+.checkmark-circle {
+    color:#2FBE34;
+    text-decoration: line-through;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 
-export default function Question({ index, pergunta, resposta }) {
+export default function Question({ index, pergunta, resposta, answeredCard, answer }) {
     const [question, setQuestion] = React.useState(false);
 
     return (
@@ -26,15 +26,18 @@ export default function Question({ index, pergunta, resposta }) {
                         {resposta}
                     </div>
                     <div className="opções">
-                        <div className="button red">
+                        <div className="button red"
+                            onClick={() => answeredCard(index, 'close-circle')}>
                             <div>Não</div>
                             <div>lembrei!</div>
                         </div>
-                        <div className="button yellow">
+                        <div className="button yellow"
+                            onClick={() => answeredCard(index, 'help-circle')}>
                             <div>Quase</div>
                             <div>lembrei!</div>
                         </div>
-                        <div className="button green">
+                        <div className="button green"
+                            onClick={() => answeredCard(index, 'checkmark-circle')}>
                             Zap!
                         </div>
 
