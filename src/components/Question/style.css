@@ -17,14 +17,14 @@ li:last-child {
     flex-direction: column;
     justify-content: space-around;
     font-family: 'Recursive';
-    font-size: 18px;
     font-weight: 400;
-    color: #333333;
 }
 
 .aberta>.texto {
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 18px;
+    color: #333333;
 }
 
 .aberta>img {
@@ -32,4 +32,24 @@ li:last-child {
     width: 20px;
     margin-right: 20px;
     margin-left: 250px;
+}
+
+.aberta>.opções {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.opções>.button {
+    height: 38px;
+    width: 86px;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
