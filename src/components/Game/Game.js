@@ -60,6 +60,7 @@ const flashcards = [
 
 export default function Game({ setTela }) {
     const [flashcard, setFlashcard] = React.useState(flashcards);
+    const [answers, setAnswers] = React.useState([]);
 
     function clickedCard(flashcardIndex) {
         let newFlashcards = flashcard.map((flashcard, index) => {
@@ -94,6 +95,7 @@ export default function Game({ setTela }) {
             }
         })
         setFlashcard([...newFlashcards]); 
+        setAnswers([...answers, answer]);
     }
 
     return (
@@ -114,7 +116,7 @@ export default function Game({ setTela }) {
                         />)
                 )}
             </ul>
-            <Bottom flashcards={flashcards.length} />
+            <Bottom answers={answers} flashcards={flashcards.length} />
         </>
     );
 }

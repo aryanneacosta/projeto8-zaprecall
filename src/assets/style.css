@@ -4,6 +4,7 @@ body {
     font-family: 'Recursive', sans-serif;
     font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .red {

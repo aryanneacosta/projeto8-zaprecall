@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-
+import setinha from "../../assets/img/setinha.png"
 
 export default function Question({ index, pergunta, resposta, answeredCard, answer }) {
     const [question, setQuestion] = React.useState(false);
@@ -15,7 +15,7 @@ export default function Question({ index, pergunta, resposta, answeredCard, answ
                     </div>
                     <img
                         onClick={() => setQuestion(true)}
-                        src="./././img/setinha.png"
+                        src={setinha}
                         alt="setinha"
                     />
                 </li>
