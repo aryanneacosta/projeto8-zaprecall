@@ -57,6 +57,8 @@ const flashcards = [
     }
 ]
 
+flashcards.sort( () => 0.5 - Math.random() );
+
 
 export default function Game({ setTela }) {
     const [flashcard, setFlashcard] = React.useState(flashcards);
