@@ -2,10 +2,10 @@ import "./style.css";
 import party from "../../assets/img/party.png";
 import sad from "../../assets/img/sad.png";
 
-export default function Bottom({ answers, flashcards }) {
+export default function Bottom({ answers, flashcards, setTela }) {
 
     function concluded(answers) {
-        let result = answers.filter(() => answers === 'close-circle');
+        let result = answers.filter((answers) => answers === 'close-circle');
 
         if (result.length > 0) {
             return (
@@ -41,7 +41,7 @@ export default function Bottom({ answers, flashcards }) {
                 {answers.length === flashcards ?
                     concluded(answers)
                     :
-                    console.log('not concluded')
+                    ''
                 }
                 <div className="texto"> {answers.length}/{flashcards} CONCLUÍDOS</div>
                 <div className="icons">
@@ -50,6 +50,12 @@ export default function Bottom({ answers, flashcards }) {
                             <ion-icon key={index} name={answers}></ion-icon>
                     )}
                 </div>
+                {answers.length === flashcards ?
+                    <div className="restart" 
+                        onClick={() => setTela('home')}>REINICIAR RECALL</div>
+                    :
+                    ''
+                }
         </footer>
 
     );

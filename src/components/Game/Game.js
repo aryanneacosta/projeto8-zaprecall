@@ -116,7 +116,11 @@ export default function Game({ setTela }) {
                         />)
                 )}
             </ul>
-            <Bottom answers={answers} flashcards={flashcards.length} />
+            <Bottom
+                answers={answers}
+                flashcards={flashcards.length}
+                setTela={setTela}
+            />
         </>
     );
 }

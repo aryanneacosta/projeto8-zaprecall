@@ -69,3 +69,18 @@ ion-icon {
     color: #333333;
     margin-bottom: 6px;
 }
+
+.restart {
+    height: 32px;
+    width: 167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FB6B6B;
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+}

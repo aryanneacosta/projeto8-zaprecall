@@ -8,7 +8,7 @@ import Game from "./components/Game/Game";
 import Home from "./components/Home/Home";
 
 function App() {
-    const [tela, setTela] = React.useState('game');
+    const [tela, setTela] = React.useState('home');
 
     return (
         <>
