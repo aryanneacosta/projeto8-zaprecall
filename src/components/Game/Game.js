@@ -10,49 +10,49 @@ const flashcards = [
     { 
         pergunta: 'O que é JSX?', 
         resposta: 'Uma extensão de linguagem do JavaScript', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'O React é __', 
         resposta: 'uma biblioteca JavaScript para construção de interfaces', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'Componentes devem iniciar com __', 
         resposta: 'letra maiúscula', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'Podemos colocar __ dentro do JSX', 
         resposta: 'expressões', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'O ReactDOM nos ajuda __', 
         resposta: ' interagindo com a DOM para colocar componentes React na mesma', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'Usamos o npm para __', 
         resposta: 'gerenciar os pacotes necessários e suas dependências', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'Usamos props para __', 
         resposta: 'passar diferentes informações para componentes', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     },
     { 
         pergunta: 'Usamos estado (state) para __', 
         resposta: 'dizer para o React quais informações quando atualizadas devem renderizar a tela novamente', 
-        clicked: false,
+        clicked: 'não-virada',
         answer: 'play-outline'
     }
 ]
@@ -67,12 +67,12 @@ export default function Game({ setTela }) {
             if (index === flashcardIndex) {
                 return {
                     ...flashcard,
-                    clicked: true,
+                    clicked: 'virada',
                 }
             } else {
                 return {
                     ...flashcard,
-                    clicked: false,
+                    clicked: 'não-virada',
                 }
             }
         })
@@ -84,17 +84,17 @@ export default function Game({ setTela }) {
             if (index === flashcardIndex) {
                 return {
                     ...flashcard,
-                    clicked: false,
+                    clicked: 'respondida',
                     answer: answer
                 }
             } else {
                 return {
                     ...flashcard,
-                    clicked: false,
+                    clicked: 'não-virada',
                 }
             }
         })
-        setFlashcard([...newFlashcards]); 
+        setFlashcard([...newFlashcards]);
         setAnswers([...answers, answer]);
     }
 
